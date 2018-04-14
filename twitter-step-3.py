@@ -13,7 +13,7 @@ for dirpath, dirs, files in os.walk('nlp/step2'):
                 else:
                     wordcount[word] += 1
 
-files_object = open("nlp/step3/"+"word-frequency"+ ".txt" , "w" ,encoding='utf-8')
+files_object = open("nlp/step3/word-frequency.txt" , "w" ,encoding='utf-8')
 
 for k,v in sorted(wordcount.items(), key=lambda x: x[1] , reverse=True):
     files_object.write(str(k) + ":" + str(v) + "\n")
